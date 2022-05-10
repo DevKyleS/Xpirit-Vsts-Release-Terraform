@@ -3,7 +3,7 @@
   "id": "PeterGroenewegen-Xpirit-Vsts-Release-Terraform",
   "name": "Terraform",
   "version": "2.4.1",
-  "publisher": "petergroenewegen",
+  "publisher": "DevKyleS",
   "public": true,
   "targets": [
     {
