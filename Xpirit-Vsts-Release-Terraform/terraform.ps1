@@ -37,9 +37,9 @@ function Install-Terraform
 
     $webpage = (Invoke-WebRequest $terraformbaseurl -UseBasicParsing).Content
 
-    $versions = $webpage -split "`n" | Select-String -pattern $regex -AllMatches | % { $_.Matches | % { $_.Groups[1].Value } }
     if ($version -eq "latest")
     {
+        $versions = $webpage -split "`n" | Select-String -pattern $regex -AllMatches | % { $_.Matches | % { $_.Groups[1].Value } }
         $version = $versions[0]
     }
     else
