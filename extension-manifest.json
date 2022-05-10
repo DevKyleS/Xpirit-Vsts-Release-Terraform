@@ -12,7 +12,7 @@
   ],
   "description": "Build extension that enable you to run Terraforms on the build agent.",
   "categories": [
-    "Build and release"
+    "Azure Pipelines"
   ],
   "tags": [
     "terraform",
