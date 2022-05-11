@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "DevKyleS-Xpirit-Vsts-Release-Terraform",
   "name": "Terraform",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "publisher": "DevKyleS",
   "public": true,
   "targets": [
