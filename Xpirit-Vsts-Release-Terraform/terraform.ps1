@@ -37,18 +37,18 @@ function Install-Terraform
 
     $webpage = (Invoke-WebRequest $terraformbaseurl -UseBasicParsing).Content
 
-    #$versions = $webpage -split "`n" | Select-String -pattern $regex -AllMatches | % { $_.Matches | % { $_.Groups[1].Value } }
-    #if ($version -eq "latest")
-    #{
-    #    $version = $versions[0]
-    #}
-    #else
-    #{
-    #    if (-not $versions.Contains($version))
-    #    {   
-    #        throw [System.Exception] "$version not found."
-    #    }
-    #}
+    $versions = $webpage -split "`n" | Select-String -pattern $regex -AllMatches | % { $_.Matches | % { $_.Groups[1].Value } }
+    if ($version -eq "latest")
+    {
+        $version = $versions[0]
+    }
+    else
+    {
+        if (-not $versions.Contains($version))
+        {   
+            throw [System.Exception] "$version not found."
+        }
+    }
 
     $tempfile = [System.IO.Path]::GetTempFileName()
     $source = "https://releases.hashicorp.com/terraform/"+$version+"/terraform_"+$version+"_windows_amd64.zip"
