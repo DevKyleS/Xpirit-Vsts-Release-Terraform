@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
-  "id": "PeterGroenewegen-Xpirit-Vsts-Release-Terraform",
+  "id": "DevKyleS-Xpirit-Vsts-Release-Terraform",
   "name": "Terraform",
-  "version": "2.4.1",
+  "version": "2.4.4",
   "publisher": "DevKyleS",
   "public": true,
   "targets": [
@@ -48,7 +48,7 @@
       "uri": "https://pgroene.wordpress.com/"
     },
     "support": {
-      "uri": "https://github.com/XpiritBV/Xpirit-Vsts-Release-Terraform"
+      "uri": "https://github.com/DevKyleS/Xpirit-Vsts-Release-Terraform"
     }
   },
   "branding": {

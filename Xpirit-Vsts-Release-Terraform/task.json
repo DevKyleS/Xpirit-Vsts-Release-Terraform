@@ -1,5 +1,5 @@
 {
-  "id": "31f040e5-e040-4336-878a-59a493289794",
+  "id": "40a93df4-76e5-4032-b6b7-f8908108d2d0",
   "name": "Terraform",
   "friendlyName": "Run Terraform",
   "description": "Run a Terraform on the build agent",
@@ -10,7 +10,7 @@
   "version": {
     "Major": 2,
     "Minor": 4,
-    "Patch": 0
+    "Patch": 4
   },
   "demands": [ "azureps" ],
   "minimumAgentVersion": "1.95.0",
